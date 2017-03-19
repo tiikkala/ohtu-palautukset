@@ -19,6 +19,65 @@ public class VarastoTest {
     public void setUp() {
         varasto = new Varasto(10);
     }
+    
+    @Test
+    public void negatiivinenLisaysEiMuutaSaldoa() {
+        varasto.lisaaVarastoon(-2);
+        assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
+    }
+    
+    @Test
+    public void kuormitettuKonstruktoriEiLuoNegatiivistaTilavuutta() {
+        varasto = new Varasto(0, -1);
+        assertEquals(0, varasto.getTilavuus(), vertailuTarkkuus);
+    }
+    
+    @Test
+    public void konstruktoriEiLuoNegatiivistaSaldoa() {
+        varasto = new Varasto(10, -1);
+        assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
+    }
+    
+    @Test
+    public void konstruktoriAsettaaAlkusaldonOikein() {
+        varasto = new Varasto(10, 5);
+        assertEquals(5, varasto.getSaldo(), vertailuTarkkuus);
+    }
+    
+    @Test
+    public void tilavuuttaSuurempiAlkusaldoTayttaaVaraston() {
+        varasto = new Varasto(10, 11);
+        assertEquals(10, varasto.getSaldo(), vertailuTarkkuus);
+    }
+    
+    @Test
+    public void konstruktoriEiLuoNegatiivistaTilavuutta() {
+        varasto = new Varasto(-1);
+        assertEquals(0, varasto.getTilavuus(), vertailuTarkkuus);
+    }
+    
+    @Test
+    public void toStringpalauttaaOikeanMerkkijonoesityksen() {
+        String toString = "saldo = 0.0, vielä tilaa 10.0";
+        assertTrue(toString.equals(varasto.toString()));
+    }
+    
+    @Test public void negatiivinenOttoEiMuutaSaldoa() {
+        varasto.otaVarastosta(-2);
+        assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
+    }
+    
+    @Test
+    public void varastonSaldoEiYlitaMaksimia() {
+        varasto.lisaaVarastoon(11);
+        assertEquals(10, varasto.getSaldo(), vertailuTarkkuus);
+    }
+    
+    @Test
+    public void varastonSaldoEiMuutuNegatiiviseksi() {
+        varasto.otaVarastosta(10);
+        assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
+    }
 
     @Test
     public void konstruktoriLuoTyhjanVaraston() {
