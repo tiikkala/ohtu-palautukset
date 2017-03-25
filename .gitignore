@@ -1,5 +1,6 @@
 *~
 *.tmp
 *.[oa]
-build/
-/.nb-gradle/
+**build/
+**/.nb-gradle/
+**.gradle/
