@@ -5,6 +5,8 @@ apply plugin: 'java'
 
 apply plugin: 'application'
 
+apply plugin: 'checkstyle'
+
 repositories {
     jcenter()
 }
@@ -19,4 +21,5 @@ mainClassName = 'ohtuesimerkki.Main'
 run {
     standardInput = System.in
 }
+
 

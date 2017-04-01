@@ -63,27 +63,15 @@ public class Player implements Comparable<Player> {
     }
 
     @Override
-    public int hashCode() {
-        int hash = 5;
-        return hash;
-    }
-
-    @Override
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
+        if (obj == null || (getClass() != obj.getClass())) {
             return false;
         }
         final Player other = (Player) obj;
         if (!Objects.equals(this.name, other.name)) {
-            return false;
-        }
-        if (!Objects.equals(this.team, other.team)) {
             return false;
         }
         return true;

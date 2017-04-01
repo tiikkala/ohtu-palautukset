@@ -8,7 +8,14 @@ import java.util.Scanner;
 public class PlayerReader implements Reader {
 
     private Scanner scanner;
+    private int playerInfoParts = 3;
+    private int firstPartIndex = 0;
+    private int seocndPartIndex = 1;
+    private int thirdPartIndex = 2;
+    private int fourthPartIndex = 3;
+    private int fifthPartIndex = 4;
 
+    
     public PlayerReader(String pageUrl) {
         try {
             URL url = new URL(pageUrl);
@@ -25,8 +32,9 @@ public class PlayerReader implements Reader {
         while (scanner.hasNextLine()) {
             String[] parts =  scanner.nextLine().split(";");            
             
-            if (parts.length > 3) {
-                players.add(new Player(parts[0].trim(), parts[1], extractInt(parts[3]), extractInt(parts[4])));
+            if (parts.length > playerInfoParts) {
+                players.add(new Player(parts[firstPartIndex].trim(), parts[seocndPartIndex], 
+                        extractInt(parts[fourthPartIndex]), extractInt(parts[fifthPartIndex])));
             }
         }
 
