@@ -1,0 +1,3 @@
+Start, Stop, Continue, More of, Less of Wheel: Pysähdytään miettimään mitä ohjelmistotuotantoprosessissa kannattaisi tehdä toisin ja toisaalta mikä on toiminut hyvin. Työkaluna esim. A3:lle piirretty ympyrä, joka jaetaan viiteen osaan "Aloita", "Lopeta", "Jatka", "Enemmän" ja "Vähemmän". Osioiden täyttämistä avittavat seuraavat kysymykset: Minkä tekeminen pitäisi aloittaa? Minkä tekeminen pitäisi lopettaa? Minkä tekemistä pitäisi jaktaa? Mitä pitäisi tehdä enemmän/vähemmän?
+
+Glad, Sad, Mad: Tarkoituksena, että tiimin jäsenet voivat kirjata, mitkä asiat työskentelyssä ovat sprintin aikana tehneet hiedät iloisiksi, surullisiksi tai vihaisiksi. Työkaluna kasa kortteja, joihin havaintoja kirjataan. Kun havainnot on kirjattu, niistä keskustellaan.
