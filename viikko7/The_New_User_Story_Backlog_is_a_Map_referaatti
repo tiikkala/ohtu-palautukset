@@ -1,3 +1,0 @@
-Artikkelissa esitetään uusi karttapohjainen lähestymistapa product backlogin laadintaan. Tavoitteena on, että product baclog kuvaisi tuotetta kokonaisuutena – ei vain sen irrallisia osia. Perusajatus on, että lineaarisen listan sijaan product backlogissa user storyja ryhmitellään kokonaisuuksiksi. Näin on helpompi hahmottaa, mitä välivaiheita jonkin laajemman kokonaisuuden tekeminen vaatii. 
-
-Tätytyy sanoa, että olen aika vaikuttunut tästä todella yksinkertaisesta ideasta. Jo pelkän miniprojektin kokemuksen perusteella olen vakuuttunut, että tällainen product baclogin ryhmittely ja jaoittelu erilaisiin kokonaisuuksiin on todella hyödyllistä ja auttaa hahmottamaan paitsi kokonaiskuvan paremmin myös näkemään ja kirjaamaan ylös kaikki piilevät yksityiskohdat.
